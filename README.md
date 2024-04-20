@@ -30,3 +30,6 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons? What is it in terms of the number of flips? Add your
 answer to this markdown file.
 
+The asymtotic complexity of my program is $\Theta(n^2)$ since we have to traverse the array to find the largest item (n), then we need flip it to the bottom of our unsorted stack (n+n), and then we essentially do that for each element (n * (n+n)), and because we can remove constants in asymtotic analysis the algorithm has asymtotic complexity of $\Theta(n^2)$
+
+In terms of the number of comparisons the asymtotic complexity is $Theta(n^2)$ since we essentially compare for the largest element across n lists of sizes of at most n. In terms of the number of flips, we flip the largest item in the unsorted list to the top of the list, then we flip to the bottom of the unsorted. Since flip has linear complexity of at most n we can see that for this operation it would be complexity of at most 2n, so that would mean an asymtotic complexity of $\Theta(n)$ 
